@@ -11,8 +11,7 @@ export default function Form({ search, onSubmit, onChange }) {
                 name="url" 
                 placeholder="URL"
                 value={search}
-                onChange={onChange}
-                />
+                onChange={onChange}/>
             
             <section className="methods">
                 <div>
@@ -29,7 +28,12 @@ export default function Form({ search, onSubmit, onChange }) {
                 </div>
                 <button aria-label="button">Let's see it!</button>
             </section>
+
+            <section className="jsonField">
+                <textarea placeholder="RAW JSON BODY" name="body"></textarea>
+            </section>
         </form>
         </section>
+
     )
 }
